@@ -9,8 +9,6 @@ const FormPage: React.FunctionComponent = () => {
   return (
     <div className="flex justify-center items-center h-screen">
       <ImportForm />
-      <ToastContainer />
-      <GetToken />
     </div>
   );
 };

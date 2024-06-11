@@ -1,12 +1,23 @@
 import React from "react";
 import "../../css/app.scss";
 import imgBanner from "../../asset/banner/banner.png";
-
+import { openChat } from "zmp-sdk/apis";
 const BannerComponent: React.FC = () => {
   // Tạo mảng ký tự từ chuỗi "Trí Anh, mắt sáng sáng tương"
   const text = "Trí Anh, mắt sáng sáng tương";
   const characters = text.split("");
-
+  const openChatScreen = async () => {
+    try {
+      await openChat({
+        type: "user",
+        id: "4254391180785311679",
+        message: "Có ai chát ở đây không! tôi cần tư vấn!",
+      });
+    } catch (error) {
+      // xử lý khi gọi api thất bại
+      console.log(error);
+    }
+  };
   return (
     <div className="setBanner bg-gradient-to-r from-[#dc1f18] to-[#f8954f] w-full rounded-lg flex flex-col justify-between items-center text-white relative">
       <div className="flex justify-center items-center">
@@ -19,7 +30,10 @@ const BannerComponent: React.FC = () => {
           </span>
         ))}
       </div>
-      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-1 ">
+      <div
+        onClick={openChatScreen}
+        className="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-1 "
+      >
         <button
           className="w-48 text-white font-sans py-2 px-4 rounded-full border border-white"
           style={{

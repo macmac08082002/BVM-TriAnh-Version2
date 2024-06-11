@@ -1,11 +1,11 @@
 import React from "react";
 import DoctorCardComponent from "./CardDoctorComponent";
-import nguyenngocnguyen from "../../asset/doctors/nguyenngocnguyen.jpg";
-import nguyendoanhnhan from "../../asset/doctors/nguyendoanhnhan.jpg";
-import hodoanthanhnhat from "../../asset/doctors/hodoanthanhnhat.jpg";
-import tuthanhnutuyetminh from "../../asset/doctors/tuthanhnutuyetminh.jpg";
-import vuhailong from "../../asset/doctors/vuhailong.jpg";
-import bactronghoang from "../../asset/doctors/bactronghoang.jpg";
+import lehongduc from "../../asset/doctors/lehongduc.png";
+import nguyencaoky from "../../asset/doctors/nguyencaoky.png";
+import caohoangphuc from "../../asset/doctors/caohoangphuc.png";
+import tranthimyuyen from "../../asset/doctors/tranthimyuyen.png";
+import bachtuyetnhi from "../../asset/doctors/bachtuyetnhi.png";
+import caomy from "../../asset/doctors/caomy.png";
 import { TiStarFullOutline } from "react-icons/ti";
 import "../../css/app.scss";
 
@@ -24,57 +24,57 @@ const DoctorList: React.FC = () => {
   const doctors: Doctor[] = [
     {
       id: 1,
-      name: "BS.Nguyễn Ngọc Nguyên",
+      name: "BS.Lê Hồng Đức",
       department: "Bác sĩ",
-      hospital: "Mắt Sài Gòn Nguyễn Du",
+      hospital: "BVM Trí Anh",
       rating: 4.7,
       experience: "25 năm",
-      image: nguyenngocnguyen,
+      image: lehongduc,
     },
     {
       id: 2,
-      name: "BS.Nguyễn Danh Nhân",
+      name: "BS.Nguyễn Cao Kỳ",
       department: "Bác sĩ lâm sàng",
-      hospital: "Bệnh viện Mắt Sài Gòn Sông Hàn",
+      hospital: "BVM Trí Anh",
       rating: 4.6,
       experience: "7 năm",
-      image: nguyendoanhnhan,
+      image: nguyencaoky,
     },
     {
       id: 3,
-      name: "BS.Hồ Đoàn Thanh Nhất",
+      name: "BS.Cao Hoàng Phúc",
       department: "Bác sĩ",
-      hospital: "Bệnh viện Mắt TP.HCM",
+      hospital: "BVM Trí Anh",
       rating: 4.8,
       experience: "10 năm",
-      image: hodoanthanhnhat,
+      image: caohoangphuc,
     },
     {
       id: 4,
-      name: "BS.CKI Từ Thanh Nữ Thuyết Minh",
+      name: "BS.CKI Trần Thị Mỹ Uyên",
       department: "Bác sĩ CKI",
-      hospital: "Mắt Sài Gòn Ngô Gia Tự",
+      hospital: "BVM Trí Anh",
       rating: 4.7,
       experience: "7 năm",
-      image: tuthanhnutuyetminh,
+      image: tranthimyuyen,
     },
     {
       id: 5,
-      name: "Ths BS. Vũ Hải Long",
+      name: "Ths BS. Bạch Tuyết Nhi",
       department: "Trưởng phòng KHTH",
-      hospital: "Mắt Sài Gòn Nguyễn DU",
+      hospital: "BVM Trí Anh",
       rating: 4.7,
       experience: "7 năm",
-      image: vuhailong,
+      image: bachtuyetnhi,
     },
     {
       id: 6,
-      name: "BS. Bạc Trọng Hoàng",
+      name: "BS. Cao Mỹ",
       department: "Bác sĩ lâm sàng",
-      hospital: "Mắt Sài Gòn Ngô Gia Tự",
+      hospital: "BVM Trí Anh",
       rating: 4.5,
       experience: "11 năm",
-      image: bactronghoang,
+      image: caomy,
     },
   ];
 

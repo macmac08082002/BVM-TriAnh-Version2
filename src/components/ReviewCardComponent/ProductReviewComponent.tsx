@@ -5,7 +5,6 @@ import ReviewCardComponent from "./ReviewCardComponent";
 
 interface Review {
   username: string;
-  avatar: string;
   rating: number;
   comment: string;
 }

@@ -61,13 +61,16 @@ const ImportForm = () => {
     }
 
     try {
-      const response = await fetch("https://hongducgroup.tech/api/post-data", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://sv-bvm-trianh2.onrender.com/api/post-data",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Có lỗi xảy ra khi gửi dữ liệu!");

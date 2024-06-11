@@ -56,7 +56,7 @@ const GetToken = ({ onPhoneNumberReceived }) => {
     }
   }, [accessToken, phoneNumberToken]);
 
-  return <div>{/* Nội dung của component GetToken */}</div>;
+  return <div>.</div>;
 };
 
 export default GetToken;

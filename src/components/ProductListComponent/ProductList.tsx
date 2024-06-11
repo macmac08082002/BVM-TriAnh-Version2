@@ -16,7 +16,7 @@ const ProductList: React.FC = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get<Product[]>(
-          "https://hongducgroup.tech/api/categories"
+          "https://sv-bvm-trianh2.onrender.com/api/categories"
         );
         setData(response.data);
       } catch (error) {
